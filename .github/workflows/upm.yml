@@ -26,7 +26,7 @@ jobs:
       - name: install npm
         run: npm install
       - name: Build react app 
-        run: yarn build
+        run: CI= npm run build
       - name: install Surge
         run: npm install -g surge
       - name: Run Surge
